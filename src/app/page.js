@@ -5,6 +5,7 @@ import Books from "./components/Books";
 import Music from "./components/Music";
 import Resources from "./components/Resources";
 import AboutMe from "./components/AboutMe";
+import "./styles/globals.css";
 
 export default function HomePage() {
   const [activeSection, setActiveSection] = useState("books");
@@ -23,12 +24,17 @@ export default function HomePage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className=" container mx-auto px-4 py-8">
       <header className="text-center">
-        <h1 className="text-4xl font-bold mb-2">Camino Elevado</h1>
-        <p className="text-lg text-gray-600">
-          Explora libros, música y recursos únicos desde un solo lugar.
-        </p>
+        <h1 className="head text-red-500">Camino Elevado</h1>
+        <div className="columns-2 gap-5">
+          <p className="intro">
+            Esta colleccion de recursos es un proyecto personal, con el fin de
+            compartir conocimiento y experiencias personales que forman parte de
+            mi macrovision del amor, el universo y el mundo.
+          </p>
+          <img></img>
+        </div>
       </header>
 
       <nav className="flex justify-center space-x-4 my-6">
